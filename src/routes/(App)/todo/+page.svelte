@@ -29,7 +29,6 @@
 
   export let data: PageData;
   $: ({ todos } = data);
-  console.log("🚀 - data:", data);
   let modal = false;
 
   function toast() {
