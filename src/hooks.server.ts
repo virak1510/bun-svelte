@@ -3,6 +3,7 @@ import type { Handle } from "@sveltejs/kit";
 
 export const handle: Handle = async ({ event, resolve }) => {
   // we can pass `event` because we used the SvelteKit middleware
+  event.locals.auth = auth.handleRequest(event);
   if (event.url.pathname.startsWith("/api")) {
 	//set api route to send content type as json
     event.setHeaders({
@@ -11,6 +12,5 @@ export const handle: Handle = async ({ event, resolve }) => {
     return await resolve(event);
   }
 
-  event.locals.auth = auth.handleRequest(event);
   return await resolve(event);
 };

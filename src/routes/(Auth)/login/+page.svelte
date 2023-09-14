@@ -2,12 +2,15 @@
     import type { PageData } from "./$types";
     import { Input } from "$lib/components/ui/input";
     import { Button } from "$lib/components/ui/button";
+  import dayjs from "dayjs";
+    console.log(dayjs());
+    
     export let data: PageData;
   </script>
   
   <div class="grid place-content-center h-screen">
     <div class="w-[500px]">
-      <h1 class="text-teal-500 mb-5">Sign Up</h1>
+      <h1 class="text-teal-500 mb-5">Login</h1>
       <form
         action="?/login"
         method="post"
@@ -21,8 +24,9 @@
           placeholder="password"
           autocomplete="off"
         />
-        <Button type="submit">Sign up</Button>
+        <Button type="submit">Login</Button>
       </form>
+      <p class="py-2">no account yet ? <a class="underline" href="/sign-up">sign-up</a></p>
     </div>
   </div>
   

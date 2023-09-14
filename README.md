@@ -2,21 +2,22 @@
 
 This example uses primsa with `postgres`.
 
-# Before start you need to init db with .env.example
+## Before start you need to init db with .env.example
 
 ```bash
 # install dependencies
-bun i | npm i
-
+# for bun
+bun i 
 # then u need to make change to db by running
-bunx prisma db push | npx prisma db push
+bunx prisma db push
 # run dev server
-bun dev | npm run dev
+bun dev
+--------------------------------------
+# for node
+npm i
+# then u need to make change to db by running
+npx prisma db push
+# run dev server
+npm run dev
+
 ```
-
-## User schema
-
-| id         | type     | unique |
-| ---------- | -------- | :----: |
-| `id`       | `string` |        |
-| `username` | `string` |   ✓    |

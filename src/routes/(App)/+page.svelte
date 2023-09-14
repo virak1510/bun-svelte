@@ -5,5 +5,5 @@
 </script>
 
 <div class="grid place-content-center h-full">
-    <img src="/images/XOsX.gif" alt="#">
+    <img src="/images/myhtml.gif" alt="#">
 </div>

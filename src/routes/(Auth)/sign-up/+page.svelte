@@ -24,5 +24,6 @@
       />
       <Button type="submit">Sign up</Button>
     </form>
+    <p class="py-2">have account ? <a class="underline" href="/login">login</a></p>
   </div>
 </div>
